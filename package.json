@@ -9,7 +9,7 @@
     "build": "cd client && npm run build && react-scripts build",
     "install": "npm install",
     "client": "cd client && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1 && react-scripts test",
+    "test": "echo \"Error: no test specified\" && exit 1 && react-scripts test"
   },
   "keywords": [],
   "author": "",
