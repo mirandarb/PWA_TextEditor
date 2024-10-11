@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js",
+    "start": "node server/server.js && react-scripts start",
     "start:dev": "nodemon server/server.js",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm run build && react-scripts build",
     "install": "npm install",
     "client": "cd client && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1 && react-scripts test",
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "react": "^17.0.0",
+    "react-scripts": "4.0.3",
     "react-dom": "^17.0.0",
     "serve": "^14.0.1"   
   },
