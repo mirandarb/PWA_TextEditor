@@ -1,27 +1,25 @@
 {
-  "name": "pwa_texteditor",
+  "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node server/server.js && react-scripts start",
-    "start:dev": "nodemon server/server.js",
-    "build": "cd client && npm run build && react-scripts build",
-    "install": "npm install",
+   "start": "node server/server.js",
+    "start:dev": "nodemon server.js",
+    "build": "react-scripts build",
     "client": "cd client && npm start",
-    "test": "echo \"Error: no test specified\" && exit 1 && react-scripts test"
+    "server": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.1",
-    "react": "^17.0.0",
-    "react-scripts": "4.0.3",
-    "react-dom": "^17.0.0",
-    "serve": "^14.0.1"   
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
   }
 }
+
